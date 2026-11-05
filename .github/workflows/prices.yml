@@ -1,0 +1,53 @@
+name: Daily closing prices
+
+on:
+  schedule:
+    # Weekdays after the 4pm Eastern close (21:00 UTC in winter, 20:00 in summer),
+    # plus an overnight re-run to pick up late corrections. Times are UTC.
+    - cron: "40 22 * * 1-5"
+    - cron: "15 7 * * 2-6"
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "Download one year of history"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ["fetch_prices.py", ".github/workflows/prices.yml", "extra_symbols.txt"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: prices
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet yfinance pandas lxml requests
+      - name: Fetch prices
+        run: |
+          if [ "${{ github.event_name }}" = "push" ] && [ ! -f data/latest.json ]; then
+            python fetch_prices.py --backfill
+          elif [ "${{ inputs.backfill }}" = "true" ]; then
+            python fetch_prices.py --backfill
+          else
+            python fetch_prices.py --days 10
+          fi
+      - name: Commit
+        run: |
+          git config user.name "price-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Prices $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase origin main
+          git push origin HEAD:main
