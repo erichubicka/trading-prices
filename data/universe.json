@@ -1,0 +1,2462 @@
+{
+"count": 819,
+"symbols": {
+"A": [
+"sp500"
+],
+"AAPL": [
+"sp500"
+],
+"AAUC.TO": [
+"tsx_composite"
+],
+"AAV.TO": [
+"tsx_composite"
+],
+"ABBV": [
+"sp500"
+],
+"ABNB": [
+"sp500"
+],
+"ABRA.TO": [
+"tsx_composite"
+],
+"ABT": [
+"sp500"
+],
+"ABX.TO": [
+"tsx_composite"
+],
+"AC.TO": [
+"tsx_composite"
+],
+"ACGL": [
+"sp500"
+],
+"ACN": [
+"sp500"
+],
+"ACO-X.TO": [
+"tsx_composite"
+],
+"ADBE": [
+"sp500"
+],
+"ADI": [
+"sp500"
+],
+"ADM": [
+"sp500"
+],
+"ADP": [
+"sp500"
+],
+"ADSK": [
+"sp500"
+],
+"AEE": [
+"sp500"
+],
+"AEM.TO": [
+"tsx_composite"
+],
+"AEP": [
+"sp500"
+],
+"AES": [
+"sp500"
+],
+"AFL": [
+"sp500"
+],
+"AG.TO": [
+"tsx_composite"
+],
+"AGG": [
+"etf_list"
+],
+"AGI.TO": [
+"tsx_composite"
+],
+"AIF.TO": [
+"tsx_composite"
+],
+"AIG": [
+"sp500"
+],
+"AIZ": [
+"sp500"
+],
+"AJG": [
+"sp500"
+],
+"AKAM": [
+"sp500"
+],
+"ALA.TO": [
+"tsx_composite"
+],
+"ALB": [
+"sp500"
+],
+"ALGN": [
+"sp500"
+],
+"ALL": [
+"sp500"
+],
+"ALLE": [
+"sp500"
+],
+"AMAT": [
+"sp500"
+],
+"AMCR": [
+"sp500"
+],
+"AMD": [
+"sp500"
+],
+"AME": [
+"sp500"
+],
+"AMGN": [
+"sp500"
+],
+"AMP": [
+"sp500"
+],
+"AMT": [
+"sp500"
+],
+"AMZN": [
+"sp500"
+],
+"ANET": [
+"sp500"
+],
+"AON": [
+"sp500"
+],
+"AOS": [
+"sp500"
+],
+"AP-UN.TO": [
+"tsx_composite"
+],
+"APA": [
+"sp500"
+],
+"APD": [
+"sp500"
+],
+"APH": [
+"sp500"
+],
+"APO": [
+"sp500"
+],
+"APP": [
+"sp500"
+],
+"APTV": [
+"sp500"
+],
+"AQN.TO": [
+"tsx_composite"
+],
+"ARE": [
+"sp500"
+],
+"ARE.TO": [
+"tsx_composite"
+],
+"ARES": [
+"sp500"
+],
+"ARIS.TO": [
+"tsx_composite"
+],
+"ARKK": [
+"etf_list"
+],
+"ARX.TO": [
+"tsx_composite"
+],
+"ASM.TO": [
+"tsx_composite"
+],
+"ATD.TO": [
+"tsx_composite"
+],
+"ATH.TO": [
+"tsx_composite"
+],
+"ATO": [
+"sp500"
+],
+"ATRL.TO": [
+"tsx_composite"
+],
+"ATS.TO": [
+"tsx_composite"
+],
+"ATZ.TO": [
+"tsx_composite"
+],
+"AVGO": [
+"sp500"
+],
+"AVY": [
+"sp500"
+],
+"AWK": [
+"sp500"
+],
+"AXON": [
+"sp500"
+],
+"AXP": [
+"sp500"
+],
+"AYA.TO": [
+"tsx_composite"
+],
+"AZO": [
+"sp500"
+],
+"BA": [
+"sp500"
+],
+"BAC": [
+"sp500"
+],
+"BALL": [
+"sp500"
+],
+"BAM.TO": [
+"tsx_composite"
+],
+"BAX": [
+"sp500"
+],
+"BB.TO": [
+"tsx_composite"
+],
+"BBD-B.TO": [
+"tsx_composite"
+],
+"BBUC.TO": [
+"tsx_composite"
+],
+"BBY": [
+"sp500"
+],
+"BCE.TO": [
+"tsx_composite"
+],
+"BDGI.TO": [
+"tsx_composite"
+],
+"BDT.TO": [
+"tsx_composite"
+],
+"BDX": [
+"sp500"
+],
+"BE": [
+"sp500"
+],
+"BEI-UN.TO": [
+"tsx_composite"
+],
+"BEN": [
+"sp500"
+],
+"BEP-UN.TO": [
+"tsx_composite"
+],
+"BF-B": [
+"sp500"
+],
+"BG": [
+"sp500"
+],
+"BHC.TO": [
+"tsx_composite"
+],
+"BIIB": [
+"sp500"
+],
+"BIP-UN.TO": [
+"tsx_composite"
+],
+"BIR.TO": [
+"tsx_composite"
+],
+"BKNG": [
+"sp500"
+],
+"BKR": [
+"sp500"
+],
+"BLK": [
+"sp500"
+],
+"BLX.TO": [
+"tsx_composite"
+],
+"BMO.TO": [
+"tsx_composite"
+],
+"BMY": [
+"sp500"
+],
+"BN.TO": [
+"tsx_composite"
+],
+"BND": [
+"etf_list"
+],
+"BNS.TO": [
+"tsx_composite"
+],
+"BNY": [
+"sp500"
+],
+"BR": [
+"sp500"
+],
+"BRK-B": [
+"sp500"
+],
+"BRO": [
+"sp500"
+],
+"BSX": [
+"sp500"
+],
+"BTE.TO": [
+"tsx_composite"
+],
+"BTO.TO": [
+"tsx_composite"
+],
+"BX": [
+"sp500"
+],
+"BXP": [
+"sp500"
+],
+"BYD.TO": [
+"tsx_composite"
+],
+"C": [
+"sp500"
+],
+"CAE.TO": [
+"tsx_composite"
+],
+"CAH": [
+"sp500"
+],
+"CAR-UN.TO": [
+"tsx_composite"
+],
+"CARR": [
+"sp500"
+],
+"CASH.TO": [
+"etf_list"
+],
+"CASY": [
+"sp500"
+],
+"CAT": [
+"sp500"
+],
+"CB": [
+"sp500"
+],
+"CBOE": [
+"sp500"
+],
+"CBRE": [
+"sp500"
+],
+"CCA.TO": [
+"tsx_composite"
+],
+"CCI": [
+"sp500"
+],
+"CCL": [
+"sp500"
+],
+"CCL-B.TO": [
+"tsx_composite"
+],
+"CCO.TO": [
+"tsx_composite"
+],
+"CDNS": [
+"sp500"
+],
+"CDW": [
+"sp500"
+],
+"CDZ.TO": [
+"etf_list"
+],
+"CEG": [
+"sp500"
+],
+"CEU.TO": [
+"tsx_composite"
+],
+"CF": [
+"sp500"
+],
+"CFG": [
+"sp500"
+],
+"CG.TO": [
+"tsx_composite"
+],
+"CHD": [
+"sp500"
+],
+"CHP-UN.TO": [
+"tsx_composite"
+],
+"CHRW": [
+"sp500"
+],
+"CHTR": [
+"sp500"
+],
+"CI": [
+"sp500"
+],
+"CIEN": [
+"sp500"
+],
+"CIGI.TO": [
+"tsx_composite"
+],
+"CINF": [
+"sp500"
+],
+"CJT.TO": [
+"tsx_composite"
+],
+"CL": [
+"sp500"
+],
+"CLS.TO": [
+"tsx_composite"
+],
+"CLX": [
+"sp500"
+],
+"CM.TO": [
+"tsx_composite"
+],
+"CMCSA": [
+"sp500"
+],
+"CME": [
+"sp500"
+],
+"CMG": [
+"sp500"
+],
+"CMI": [
+"sp500"
+],
+"CMS": [
+"sp500"
+],
+"CNC": [
+"sp500"
+],
+"CNP": [
+"sp500"
+],
+"CNQ.TO": [
+"tsx_composite"
+],
+"CNR.TO": [
+"tsx_composite"
+],
+"COF": [
+"sp500"
+],
+"COHR": [
+"sp500"
+],
+"COIN": [
+"sp500"
+],
+"COO": [
+"sp500"
+],
+"COP": [
+"sp500"
+],
+"COR": [
+"sp500"
+],
+"COST": [
+"sp500"
+],
+"CP.TO": [
+"tsx_composite"
+],
+"CPAY": [
+"sp500"
+],
+"CPRT": [
+"sp500"
+],
+"CPT": [
+"sp500"
+],
+"CPX.TO": [
+"tsx_composite"
+],
+"CRH": [
+"sp500"
+],
+"CRL": [
+"sp500"
+],
+"CRM": [
+"sp500"
+],
+"CRR-UN.TO": [
+"tsx_composite"
+],
+"CRT-UN.TO": [
+"tsx_composite"
+],
+"CRWD": [
+"sp500"
+],
+"CS.TO": [
+"tsx_composite"
+],
+"CSCO": [
+"sp500"
+],
+"CSGP": [
+"sp500"
+],
+"CSH-UN.TO": [
+"tsx_composite"
+],
+"CSU.TO": [
+"tsx_composite"
+],
+"CSX": [
+"sp500"
+],
+"CTAS": [
+"sp500"
+],
+"CTC-A.TO": [
+"tsx_composite"
+],
+"CTSH": [
+"sp500"
+],
+"CU.TO": [
+"tsx_composite"
+],
+"CURA.TO": [
+"tsx_composite"
+],
+"CVE.TO": [
+"tsx_composite"
+],
+"CVNA": [
+"sp500"
+],
+"CVS": [
+"sp500"
+],
+"CVX": [
+"sp500"
+],
+"D": [
+"sp500"
+],
+"DAL": [
+"sp500"
+],
+"DASH": [
+"sp500"
+],
+"DD": [
+"sp500"
+],
+"DDOG": [
+"sp500"
+],
+"DE": [
+"sp500"
+],
+"DECK": [
+"sp500"
+],
+"DELL": [
+"sp500"
+],
+"DFY.TO": [
+"tsx_composite"
+],
+"DG": [
+"sp500"
+],
+"DGRO": [
+"etf_list"
+],
+"DGX": [
+"sp500"
+],
+"DHI": [
+"sp500"
+],
+"DHR": [
+"sp500"
+],
+"DIA": [
+"etf_list"
+],
+"DIR-UN.TO": [
+"tsx_composite"
+],
+"DIS": [
+"sp500"
+],
+"DLR": [
+"sp500"
+],
+"DLTR": [
+"sp500"
+],
+"DML.TO": [
+"tsx_composite"
+],
+"DOC": [
+"sp500"
+],
+"DOL.TO": [
+"tsx_composite"
+],
+"DOO.TO": [
+"tsx_composite"
+],
+"DOV": [
+"sp500"
+],
+"DOW": [
+"sp500"
+],
+"DPM.TO": [
+"tsx_composite"
+],
+"DPZ": [
+"sp500"
+],
+"DRI": [
+"sp500"
+],
+"DSG.TO": [
+"tsx_composite"
+],
+"DSV.TO": [
+"tsx_composite"
+],
+"DTE": [
+"sp500"
+],
+"DUK": [
+"sp500"
+],
+"DVA": [
+"sp500"
+],
+"DVN": [
+"sp500"
+],
+"DXCM": [
+"sp500"
+],
+"EBAY": [
+"sp500"
+],
+"ECHO": [
+"sp500"
+],
+"ECL": [
+"sp500"
+],
+"ED": [
+"sp500"
+],
+"EDR.TO": [
+"tsx_composite"
+],
+"EFN.TO": [
+"tsx_composite"
+],
+"EFR.TO": [
+"tsx_composite"
+],
+"EFX": [
+"sp500"
+],
+"EFX.TO": [
+"tsx_composite"
+],
+"EG": [
+"sp500"
+],
+"EIF.TO": [
+"tsx_composite"
+],
+"EIX": [
+"sp500"
+],
+"EL": [
+"sp500"
+],
+"ELD.TO": [
+"tsx_composite"
+],
+"ELV": [
+"sp500"
+],
+"EMA.TO": [
+"tsx_composite"
+],
+"EME": [
+"sp500"
+],
+"EMP-A.TO": [
+"tsx_composite"
+],
+"EMR": [
+"sp500"
+],
+"ENB.TO": [
+"tsx_composite"
+],
+"EOG": [
+"sp500"
+],
+"EQB.TO": [
+"tsx_composite"
+],
+"EQIX": [
+"sp500"
+],
+"EQT": [
+"sp500"
+],
+"EQX.TO": [
+"tsx_composite"
+],
+"ERIE": [
+"sp500"
+],
+"ERO.TO": [
+"tsx_composite"
+],
+"ES": [
+"sp500"
+],
+"ESS": [
+"sp500"
+],
+"ETN": [
+"sp500"
+],
+"ETR": [
+"sp500"
+],
+"EVRG": [
+"sp500"
+],
+"EW": [
+"sp500"
+],
+"EXC": [
+"sp500"
+],
+"EXE": [
+"sp500"
+],
+"EXPD": [
+"sp500"
+],
+"EXPE": [
+"sp500"
+],
+"EXR": [
+"sp500"
+],
+"F": [
+"sp500"
+],
+"FANG": [
+"sp500"
+],
+"FAST": [
+"sp500"
+],
+"FCR-UN.TO": [
+"tsx_composite"
+],
+"FCX": [
+"sp500"
+],
+"FDS": [
+"sp500"
+],
+"FDX": [
+"sp500"
+],
+"FDXF": [
+"sp500"
+],
+"FE": [
+"sp500"
+],
+"FERG": [
+"sp500"
+],
+"FFH.TO": [
+"tsx_composite"
+],
+"FFIV": [
+"sp500"
+],
+"FICO": [
+"sp500"
+],
+"FIS": [
+"sp500"
+],
+"FISV": [
+"sp500"
+],
+"FITB": [
+"sp500"
+],
+"FIX": [
+"sp500"
+],
+"FLEX": [
+"sp500"
+],
+"FM.TO": [
+"tsx_composite"
+],
+"FNV.TO": [
+"tsx_composite"
+],
+"FOX": [
+"sp500"
+],
+"FOXA": [
+"sp500"
+],
+"FRT": [
+"sp500"
+],
+"FRU.TO": [
+"tsx_composite"
+],
+"FSLR": [
+"sp500"
+],
+"FSV.TO": [
+"tsx_composite"
+],
+"FTNT": [
+"sp500"
+],
+"FTS.TO": [
+"tsx_composite"
+],
+"FTT.TO": [
+"tsx_composite"
+],
+"FTV": [
+"sp500"
+],
+"FVI.TO": [
+"tsx_composite"
+],
+"GD": [
+"sp500"
+],
+"GDDY": [
+"sp500"
+],
+"GE": [
+"sp500"
+],
+"GEHC": [
+"sp500"
+],
+"GEI.TO": [
+"tsx_composite"
+],
+"GEN": [
+"sp500"
+],
+"GEV": [
+"sp500"
+],
+"GFL.TO": [
+"tsx_composite"
+],
+"GIB-A.TO": [
+"tsx_composite"
+],
+"GIL.TO": [
+"tsx_composite"
+],
+"GILD": [
+"sp500"
+],
+"GIS": [
+"sp500"
+],
+"GL": [
+"sp500"
+],
+"GLD": [
+"etf_list"
+],
+"GLW": [
+"sp500"
+],
+"GM": [
+"sp500"
+],
+"GMIN.TO": [
+"tsx_composite"
+],
+"GNRC": [
+"sp500"
+],
+"GOOG": [
+"sp500"
+],
+"GOOGL": [
+"sp500"
+],
+"GPC": [
+"sp500"
+],
+"GPN": [
+"sp500"
+],
+"GRMN": [
+"sp500"
+],
+"GRT-UN.TO": [
+"tsx_composite"
+],
+"GS": [
+"sp500"
+],
+"GSY.TO": [
+"tsx_composite"
+],
+"GWO.TO": [
+"tsx_composite"
+],
+"GWW": [
+"sp500"
+],
+"H.TO": [
+"tsx_composite"
+],
+"HAL": [
+"sp500"
+],
+"HAS": [
+"sp500"
+],
+"HBAN": [
+"sp500"
+],
+"HBM.TO": [
+"tsx_composite"
+],
+"HCA": [
+"sp500"
+],
+"HD": [
+"sp500"
+],
+"HIG": [
+"sp500"
+],
+"HII": [
+"sp500"
+],
+"HLT": [
+"sp500"
+],
+"HON": [
+"sp500"
+],
+"HONA": [
+"sp500"
+],
+"HOOD": [
+"sp500"
+],
+"HPE": [
+"sp500"
+],
+"HPQ": [
+"sp500"
+],
+"HR-UN.TO": [
+"tsx_composite"
+],
+"HRL": [
+"sp500"
+],
+"HSIC": [
+"sp500"
+],
+"HST": [
+"sp500"
+],
+"HSY": [
+"sp500"
+],
+"HUBB": [
+"sp500"
+],
+"HUM": [
+"sp500"
+],
+"HWM": [
+"sp500"
+],
+"HWX.TO": [
+"tsx_composite"
+],
+"HXS.TO": [
+"etf_list"
+],
+"HXT.TO": [
+"etf_list"
+],
+"HYG": [
+"etf_list"
+],
+"IAG.TO": [
+"tsx_composite"
+],
+"IAU.TO": [
+"tsx_composite"
+],
+"IBIT": [
+"etf_list"
+],
+"IBKR": [
+"sp500"
+],
+"IBM": [
+"sp500"
+],
+"ICE": [
+"sp500"
+],
+"IDXX": [
+"sp500"
+],
+"IEF": [
+"etf_list"
+],
+"IEX": [
+"sp500"
+],
+"IFC.TO": [
+"tsx_composite"
+],
+"IFF": [
+"sp500"
+],
+"IGM.TO": [
+"tsx_composite"
+],
+"IIP-UN.TO": [
+"tsx_composite"
+],
+"ILMN": [
+"sp500"
+],
+"IMG.TO": [
+"tsx_composite"
+],
+"IMO.TO": [
+"tsx_composite"
+],
+"INCY": [
+"sp500"
+],
+"INTC": [
+"sp500"
+],
+"INTU": [
+"sp500"
+],
+"INVH": [
+"sp500"
+],
+"IP": [
+"sp500"
+],
+"IPCO.TO": [
+"tsx_composite"
+],
+"IQV": [
+"sp500"
+],
+"IR": [
+"sp500"
+],
+"IRM": [
+"sp500"
+],
+"ISRG": [
+"sp500"
+],
+"IT": [
+"sp500"
+],
+"ITW": [
+"sp500"
+],
+"IVN.TO": [
+"tsx_composite"
+],
+"IVV": [
+"etf_list"
+],
+"IVZ": [
+"sp500"
+],
+"IWM": [
+"etf_list"
+],
+"J": [
+"sp500"
+],
+"JBHT": [
+"sp500"
+],
+"JBL": [
+"sp500"
+],
+"JCI": [
+"sp500"
+],
+"JKHY": [
+"sp500"
+],
+"JNJ": [
+"sp500"
+],
+"JPM": [
+"sp500"
+],
+"JWEL.TO": [
+"tsx_composite"
+],
+"K.TO": [
+"tsx_composite"
+],
+"KDP": [
+"sp500"
+],
+"KEL.TO": [
+"tsx_composite"
+],
+"KEY": [
+"sp500"
+],
+"KEY.TO": [
+"tsx_composite"
+],
+"KEYS": [
+"sp500"
+],
+"KHC": [
+"sp500"
+],
+"KIM": [
+"sp500"
+],
+"KKR": [
+"sp500"
+],
+"KLAC": [
+"sp500"
+],
+"KMB": [
+"sp500"
+],
+"KMI": [
+"sp500"
+],
+"KMP-UN.TO": [
+"tsx_composite"
+],
+"KNT.TO": [
+"tsx_composite"
+],
+"KO": [
+"sp500"
+],
+"KR": [
+"sp500"
+],
+"KXS.TO": [
+"tsx_composite"
+],
+"L": [
+"sp500"
+],
+"L.TO": [
+"tsx_composite"
+],
+"LAC.TO": [
+"tsx_composite"
+],
+"LB.TO": [
+"tsx_composite"
+],
+"LDOS": [
+"sp500"
+],
+"LEN": [
+"sp500"
+],
+"LH": [
+"sp500"
+],
+"LHX": [
+"sp500"
+],
+"LIF.TO": [
+"tsx_composite"
+],
+"LII": [
+"sp500"
+],
+"LIN": [
+"sp500"
+],
+"LITE": [
+"sp500"
+],
+"LLY": [
+"sp500"
+],
+"LMT": [
+"sp500"
+],
+"LNR.TO": [
+"tsx_composite"
+],
+"LNT": [
+"sp500"
+],
+"LOW": [
+"sp500"
+],
+"LQD": [
+"etf_list"
+],
+"LRCX": [
+"sp500"
+],
+"LSPD.TO": [
+"tsx_composite"
+],
+"LUG.TO": [
+"tsx_composite"
+],
+"LULU": [
+"sp500"
+],
+"LUN.TO": [
+"tsx_composite"
+],
+"LUV": [
+"sp500"
+],
+"LVS": [
+"sp500"
+],
+"LYB": [
+"sp500"
+],
+"LYV": [
+"sp500"
+],
+"MA": [
+"sp500"
+],
+"MAA": [
+"sp500"
+],
+"MAR": [
+"sp500"
+],
+"MAS": [
+"sp500"
+],
+"MAU.TO": [
+"tsx_composite"
+],
+"MCD": [
+"sp500"
+],
+"MCHP": [
+"sp500"
+],
+"MCK": [
+"sp500"
+],
+"MCO": [
+"sp500"
+],
+"MDA.TO": [
+"tsx_composite"
+],
+"MDLZ": [
+"sp500"
+],
+"MDT": [
+"sp500"
+],
+"MET": [
+"sp500"
+],
+"META": [
+"sp500"
+],
+"MFC.TO": [
+"tsx_composite"
+],
+"MFI.TO": [
+"tsx_composite"
+],
+"MG.TO": [
+"tsx_composite"
+],
+"MGM": [
+"sp500"
+],
+"MKC": [
+"sp500"
+],
+"MLM": [
+"sp500"
+],
+"MMM": [
+"sp500"
+],
+"MNST": [
+"sp500"
+],
+"MO": [
+"sp500"
+],
+"MOS": [
+"sp500"
+],
+"MPC": [
+"sp500"
+],
+"MPWR": [
+"sp500"
+],
+"MRK": [
+"sp500"
+],
+"MRNA": [
+"sp500"
+],
+"MRSH": [
+"sp500"
+],
+"MRU.TO": [
+"tsx_composite"
+],
+"MRVL": [
+"sp500"
+],
+"MS": [
+"sp500"
+],
+"MSCI": [
+"sp500"
+],
+"MSFT": [
+"sp500"
+],
+"MSI": [
+"sp500"
+],
+"MTB": [
+"sp500"
+],
+"MTD": [
+"sp500"
+],
+"MTL.TO": [
+"tsx_composite"
+],
+"MTUM": [
+"etf_list"
+],
+"MU": [
+"sp500"
+],
+"MX.TO": [
+"tsx_composite"
+],
+"NCLH": [
+"sp500"
+],
+"NDAQ": [
+"sp500"
+],
+"NDSN": [
+"sp500"
+],
+"NEE": [
+"sp500"
+],
+"NEM": [
+"sp500"
+],
+"NFI.TO": [
+"tsx_composite"
+],
+"NFLX": [
+"sp500"
+],
+"NG.TO": [
+"tsx_composite"
+],
+"NGEX.TO": [
+"tsx_composite"
+],
+"NI": [
+"sp500"
+],
+"NKE": [
+"sp500"
+],
+"NOBL": [
+"etf_list"
+],
+"NOC": [
+"sp500"
+],
+"NOW": [
+"sp500"
+],
+"NPI.TO": [
+"tsx_composite"
+],
+"NRG": [
+"sp500"
+],
+"NSC": [
+"sp500"
+],
+"NTAP": [
+"sp500"
+],
+"NTR.TO": [
+"tsx_composite"
+],
+"NTRS": [
+"sp500"
+],
+"NUE": [
+"sp500"
+],
+"NVDA": [
+"sp500"
+],
+"NVR": [
+"sp500"
+],
+"NWC.TO": [
+"tsx_composite"
+],
+"NWS": [
+"sp500"
+],
+"NWSA": [
+"sp500"
+],
+"NXE.TO": [
+"tsx_composite"
+],
+"NXPI": [
+"sp500"
+],
+"O": [
+"sp500"
+],
+"ODFL": [
+"sp500"
+],
+"OGC.TO": [
+"tsx_composite"
+],
+"OKE": [
+"sp500"
+],
+"OKTA": [
+"sp500"
+],
+"OLA.TO": [
+"tsx_composite"
+],
+"OMC": [
+"sp500"
+],
+"ON": [
+"sp500"
+],
+"ONEX.TO": [
+"tsx_composite"
+],
+"OR.TO": [
+"tsx_composite"
+],
+"ORCL": [
+"sp500"
+],
+"ORLY": [
+"sp500"
+],
+"OTEX.TO": [
+"tsx_composite"
+],
+"OTIS": [
+"sp500"
+],
+"OXY": [
+"sp500"
+],
+"P": [
+"sp500"
+],
+"PAAS.TO": [
+"tsx_composite"
+],
+"PANW": [
+"sp500"
+],
+"PAYX": [
+"sp500"
+],
+"PBH.TO": [
+"tsx_composite"
+],
+"PCAR": [
+"sp500"
+],
+"PCG": [
+"sp500"
+],
+"PEG": [
+"sp500"
+],
+"PEP": [
+"sp500"
+],
+"PET.TO": [
+"tsx_composite"
+],
+"PEY.TO": [
+"tsx_composite"
+],
+"PFE": [
+"sp500"
+],
+"PFG": [
+"sp500"
+],
+"PG": [
+"sp500"
+],
+"PGR": [
+"sp500"
+],
+"PH": [
+"sp500"
+],
+"PHM": [
+"sp500"
+],
+"PKG": [
+"sp500"
+],
+"PLD": [
+"sp500"
+],
+"PLTR": [
+"sp500"
+],
+"PM": [
+"sp500"
+],
+"PMZ-UN.TO": [
+"tsx_composite"
+],
+"PNC": [
+"sp500"
+],
+"PNR": [
+"sp500"
+],
+"PNW": [
+"sp500"
+],
+"PODD": [
+"sp500"
+],
+"POU.TO": [
+"tsx_composite"
+],
+"POW.TO": [
+"tsx_composite"
+],
+"PPG": [
+"sp500"
+],
+"PPL": [
+"sp500"
+],
+"PPL.TO": [
+"tsx_composite"
+],
+"PPTA.TO": [
+"tsx_composite"
+],
+"PRU": [
+"sp500"
+],
+"PSA": [
+"sp500"
+],
+"PSK.TO": [
+"tsx_composite"
+],
+"PSX": [
+"sp500"
+],
+"PTC": [
+"sp500"
+],
+"PWR": [
+"sp500"
+],
+"PXT.TO": [
+"tsx_composite"
+],
+"PYPL": [
+"sp500"
+],
+"Q": [
+"sp500"
+],
+"QBR-B.TO": [
+"tsx_composite"
+],
+"QCOM": [
+"sp500"
+],
+"QQQ": [
+"etf_list"
+],
+"QQQM": [
+"etf_list"
+],
+"QSR.TO": [
+"tsx_composite"
+],
+"QUAL": [
+"etf_list"
+],
+"RBA.TO": [
+"tsx_composite"
+],
+"RCH.TO": [
+"tsx_composite"
+],
+"RCI-B.TO": [
+"tsx_composite"
+],
+"RCL": [
+"sp500"
+],
+"RDDT": [
+"sp500"
+],
+"REG": [
+"sp500"
+],
+"REGN": [
+"sp500"
+],
+"REI-UN.TO": [
+"tsx_composite"
+],
+"RF": [
+"sp500"
+],
+"RJF": [
+"sp500"
+],
+"RL": [
+"sp500"
+],
+"RMD": [
+"sp500"
+],
+"ROK": [
+"sp500"
+],
+"ROL": [
+"sp500"
+],
+"ROP": [
+"sp500"
+],
+"ROST": [
+"sp500"
+],
+"RSG": [
+"sp500"
+],
+"RSP": [
+"etf_list"
+],
+"RTX": [
+"sp500"
+],
+"RUS.TO": [
+"tsx_composite"
+],
+"RVTY": [
+"sp500"
+],
+"RY.TO": [
+"tsx_composite"
+],
+"SAP.TO": [
+"tsx_composite"
+],
+"SBAC": [
+"sp500"
+],
+"SBUX": [
+"sp500"
+],
+"SCHD": [
+"etf_list"
+],
+"SCHW": [
+"sp500"
+],
+"SCR.TO": [
+"tsx_composite"
+],
+"SEA.TO": [
+"tsx_composite"
+],
+"SES.TO": [
+"tsx_composite"
+],
+"SHOP.TO": [
+"tsx_composite"
+],
+"SHW": [
+"sp500"
+],
+"SHY": [
+"etf_list"
+],
+"SIA.TO": [
+"tsx_composite"
+],
+"SII.TO": [
+"tsx_composite"
+],
+"SJ.TO": [
+"tsx_composite"
+],
+"SJM": [
+"sp500"
+],
+"SKE.TO": [
+"tsx_composite"
+],
+"SKYD": [
+"sp500"
+],
+"SLB": [
+"sp500"
+],
+"SLF.TO": [
+"tsx_composite"
+],
+"SLV": [
+"etf_list"
+],
+"SMCI": [
+"sp500"
+],
+"SMH": [
+"etf_list"
+],
+"SNA": [
+"sp500"
+],
+"SNDK": [
+"sp500"
+],
+"SNPS": [
+"sp500"
+],
+"SO": [
+"sp500"
+],
+"SOBO.TO": [
+"tsx_composite"
+],
+"SOLV": [
+"sp500"
+],
+"SOXX": [
+"etf_list"
+],
+"SPB.TO": [
+"tsx_composite"
+],
+"SPG": [
+"sp500"
+],
+"SPGI": [
+"sp500"
+],
+"SPLV": [
+"etf_list"
+],
+"SPY": [
+"etf_list"
+],
+"SRE": [
+"sp500"
+],
+"SRU-UN.TO": [
+"tsx_composite"
+],
+"SSRM.TO": [
+"tsx_composite"
+],
+"STE": [
+"sp500"
+],
+"STLD": [
+"sp500"
+],
+"STN.TO": [
+"tsx_composite"
+],
+"STT": [
+"sp500"
+],
+"STX": [
+"sp500"
+],
+"STZ": [
+"sp500"
+],
+"SU.TO": [
+"tsx_composite"
+],
+"SVM.TO": [
+"tsx_composite"
+],
+"SW": [
+"sp500"
+],
+"SWK": [
+"sp500"
+],
+"SWKS": [
+"sp500"
+],
+"SYF": [
+"sp500"
+],
+"SYK": [
+"sp500"
+],
+"SYY": [
+"sp500"
+],
+"T": [
+"sp500"
+],
+"T.TO": [
+"tsx_composite"
+],
+"TA.TO": [
+"tsx_composite"
+],
+"TCL-A.TO": [
+"tsx_composite"
+],
+"TD.TO": [
+"tsx_composite"
+],
+"TDG": [
+"sp500"
+],
+"TDY": [
+"sp500"
+],
+"TEC.TO": [
+"etf_list"
+],
+"TECH": [
+"sp500"
+],
+"TECK-B.TO": [
+"tsx_composite"
+],
+"TEL": [
+"sp500"
+],
+"TER": [
+"sp500"
+],
+"TFC": [
+"sp500"
+],
+"TFII.TO": [
+"tsx_composite"
+],
+"TFPM.TO": [
+"tsx_composite"
+],
+"TGT": [
+"sp500"
+],
+"TIH.TO": [
+"tsx_composite"
+],
+"TIP": [
+"etf_list"
+],
+"TJX": [
+"sp500"
+],
+"TKO": [
+"sp500"
+],
+"TKO.TO": [
+"tsx_composite"
+],
+"TLT": [
+"etf_list"
+],
+"TMO": [
+"sp500"
+],
+"TMUS": [
+"sp500"
+],
+"TOU.TO": [
+"tsx_composite"
+],
+"TPL": [
+"sp500"
+],
+"TPR": [
+"sp500"
+],
+"TPZ.TO": [
+"tsx_composite"
+],
+"TRGP": [
+"sp500"
+],
+"TRI.TO": [
+"tsx_composite"
+],
+"TRMB": [
+"sp500"
+],
+"TROW": [
+"sp500"
+],
+"TRP.TO": [
+"tsx_composite"
+],
+"TRV": [
+"sp500"
+],
+"TSCO": [
+"sp500"
+],
+"TSLA": [
+"sp500"
+],
+"TSN": [
+"sp500"
+],
+"TSU.TO": [
+"tsx_composite"
+],
+"TT": [
+"sp500"
+],
+"TTWO": [
+"sp500"
+],
+"TVE.TO": [
+"tsx_composite"
+],
+"TVK.TO": [
+"tsx_composite"
+],
+"TWLO": [
+"sp500"
+],
+"TXG.TO": [
+"tsx_composite"
+],
+"TXN": [
+"sp500"
+],
+"TXT": [
+"sp500"
+],
+"TYL": [
+"sp500"
+],
+"UAL": [
+"sp500"
+],
+"UBER": [
+"sp500"
+],
+"UDR": [
+"sp500"
+],
+"UHS": [
+"sp500"
+],
+"ULTA": [
+"sp500"
+],
+"UNH": [
+"sp500"
+],
+"UNP": [
+"sp500"
+],
+"UPS": [
+"sp500"
+],
+"URI": [
+"sp500"
+],
+"USA.TO": [
+"tsx_composite"
+],
+"USB": [
+"sp500"
+],
+"USMV": [
+"etf_list"
+],
+"V": [
+"sp500"
+],
+"VAB.TO": [
+"etf_list"
+],
+"VBAL.TO": [
+"etf_list"
+],
+"VCN.TO": [
+"etf_list"
+],
+"VDY.TO": [
+"etf_list"
+],
+"VEA": [
+"etf_list"
+],
+"VEEV": [
+"sp500"
+],
+"VEQT.TO": [
+"etf_list"
+],
+"VET.TO": [
+"tsx_composite"
+],
+"VFV.TO": [
+"etf_list"
+],
+"VGRO.TO": [
+"etf_list"
+],
+"VGT": [
+"etf_list"
+],
+"VHT": [
+"etf_list"
+],
+"VICI": [
+"sp500"
+],
+"VITL-UN.TO": [
+"tsx_composite"
+],
+"VLO": [
+"sp500"
+],
+"VLTO": [
+"sp500"
+],
+"VLUE": [
+"etf_list"
+],
+"VMC": [
+"sp500"
+],
+"VMRK": [
+"sp500"
+],
+"VNP.TO": [
+"tsx_composite"
+],
+"VNQ": [
+"etf_list"
+],
+"VOO": [
+"etf_list"
+],
+"VRSK": [
+"sp500"
+],
+"VRSN": [
+"sp500"
+],
+"VRT": [
+"sp500"
+],
+"VRTX": [
+"sp500"
+],
+"VST": [
+"sp500"
+],
+"VT": [
+"etf_list"
+],
+"VTI": [
+"etf_list"
+],
+"VTR": [
+"sp500"
+],
+"VTRS": [
+"sp500"
+],
+"VWO": [
+"etf_list"
+],
+"VXC.TO": [
+"etf_list"
+],
+"VXUS": [
+"etf_list"
+],
+"VYLR": [
+"sp500"
+],
+"VYM": [
+"etf_list"
+],
+"VZ": [
+"sp500"
+],
+"VZLA.TO": [
+"tsx_composite"
+],
+"WAB": [
+"sp500"
+],
+"WAT": [
+"sp500"
+],
+"WCN.TO": [
+"tsx_composite"
+],
+"WCP.TO": [
+"tsx_composite"
+],
+"WDAY": [
+"sp500"
+],
+"WDC": [
+"sp500"
+],
+"WDO.TO": [
+"tsx_composite"
+],
+"WEC": [
+"sp500"
+],
+"WELL": [
+"sp500"
+],
+"WFC": [
+"sp500"
+],
+"WFG.TO": [
+"tsx_composite"
+],
+"WM": [
+"sp500"
+],
+"WMB": [
+"sp500"
+],
+"WMT": [
+"sp500"
+],
+"WN.TO": [
+"tsx_composite"
+],
+"WPK.TO": [
+"tsx_composite"
+],
+"WPM.TO": [
+"tsx_composite"
+],
+"WRB": [
+"sp500"
+],
+"WSM": [
+"sp500"
+],
+"WSP.TO": [
+"tsx_composite"
+],
+"WST": [
+"sp500"
+],
+"WTW": [
+"sp500"
+],
+"WY": [
+"sp500"
+],
+"WYNN": [
+"sp500"
+],
+"X.TO": [
+"tsx_composite"
+],
+"XAW.TO": [
+"etf_list"
+],
+"XBAL.TO": [
+"etf_list"
+],
+"XBB.TO": [
+"etf_list"
+],
+"XEC.TO": [
+"etf_list"
+],
+"XEF.TO": [
+"etf_list"
+],
+"XEG.TO": [
+"etf_list"
+],
+"XEI.TO": [
+"etf_list"
+],
+"XEL": [
+"sp500"
+],
+"XEQT.TO": [
+"etf_list"
+],
+"XFN.TO": [
+"etf_list"
+],
+"XGD.TO": [
+"etf_list"
+],
+"XGRO.TO": [
+"etf_list"
+],
+"XIC.TO": [
+"etf_list"
+],
+"XIT.TO": [
+"etf_list"
+],
+"XIU.TO": [
+"etf_list"
+],
+"XLB": [
+"etf_list"
+],
+"XLC": [
+"etf_list"
+],
+"XLE": [
+"etf_list"
+],
+"XLF": [
+"etf_list"
+],
+"XLI": [
+"etf_list"
+],
+"XLK": [
+"etf_list"
+],
+"XLP": [
+"etf_list"
+],
+"XLRE": [
+"etf_list"
+],
+"XLU": [
+"etf_list"
+],
+"XLV": [
+"etf_list"
+],
+"XLY": [
+"etf_list"
+],
+"XMA.TO": [
+"etf_list"
+],
+"XOM": [
+"sp500"
+],
+"XQQ.TO": [
+"etf_list"
+],
+"XRE.TO": [
+"etf_list"
+],
+"XSB.TO": [
+"etf_list"
+],
+"XUS.TO": [
+"etf_list"
+],
+"XUT.TO": [
+"etf_list"
+],
+"XUU.TO": [
+"etf_list"
+],
+"XYL": [
+"sp500"
+],
+"XYZ": [
+"sp500"
+],
+"YUM": [
+"sp500"
+],
+"ZAG.TO": [
+"etf_list"
+],
+"ZBH": [
+"sp500"
+],
+"ZBRA": [
+"sp500"
+],
+"ZCN.TO": [
+"etf_list"
+],
+"ZDV.TO": [
+"etf_list"
+],
+"ZEA.TO": [
+"etf_list"
+],
+"ZEB.TO": [
+"etf_list"
+],
+"ZFL.TO": [
+"etf_list"
+],
+"ZGD.TO": [
+"etf_list"
+],
+"ZQQ.TO": [
+"etf_list"
+],
+"ZRE.TO": [
+"etf_list"
+],
+"ZSP.TO": [
+"etf_list"
+],
+"ZTS": [
+"sp500"
+],
+"ZUT.TO": [
+"etf_list"
+],
+"ZWB.TO": [
+"etf_list"
+],
+"ZWC.TO": [
+"etf_list"
+]
+}
+}
