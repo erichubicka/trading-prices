@@ -26,6 +26,7 @@ import json
 import sys
 import time
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 import requests
@@ -173,10 +174,15 @@ def main():
     print(f"{len(symbols)} symbols, {start} to {today}")
 
     closes = download(symbols, start, today)
+    # Never save today's prices before the close (4pm Eastern + 30 min): mid-day prices aren't closes.
+    et_now = dt.datetime.now(ZoneInfo("America/Toronto"))
+    cutoff_day = et_now.date() if et_now.time() >= dt.time(16, 30) else et_now.date() - dt.timedelta(days=1)
     rows: dict[str, dict] = {}
     if not closes.empty:
         for ts, row in closes.iterrows():
             d = pd.Timestamp(ts).date().isoformat()
+            if d > cutoff_day.isoformat():
+                continue
             vals = {str(s): round(float(v), 4) for s, v in row.items() if pd.notna(v) and float(v) > 0}
             if vals:
                 rows[d] = vals
@@ -187,8 +193,9 @@ def main():
     if not fx.empty:
         for ts, row in fx.iterrows():
             v = row.iloc[0]
-            if pd.notna(v):
-                fx_rows[pd.Timestamp(ts).date().isoformat()] = round(float(v), 5)
+            d = pd.Timestamp(ts).date().isoformat()
+            if pd.notna(v) and d <= cutoff_day.isoformat():
+                fx_rows[d] = round(float(v), 5)
     n_fx = merge_monthly(DATA / "fx", fx_rows)
 
     # latest.json: newest close for each symbol across everything saved
