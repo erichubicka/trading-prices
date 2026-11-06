@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-06T02:50:57Z",
+"updated_at": "2026-11-06T15:02:14Z",
 "source": "Yahoo Finance via yfinance (unofficial; personal use)",
 "note": "Daily closes, split-adjusted, not dividend-adjusted. History in data/closes/YYYY-MM.json.",
 "symbols": 819,
@@ -1670,7 +1670,7 @@
 "close": 2.6
 },
 "LB.TO": {
-"date": "2026-11-04",
+"date": "2026-11-05",
 "close": 40.49
 },
 "LDOS": {
@@ -2754,8 +2754,8 @@
 "close": 200.96
 },
 "TXG.TO": {
-"date": "2026-11-04",
-"close": 69.01
+"date": "2026-11-05",
+"close": 73.71
 },
 "TXN": {
 "date": "2026-11-05",
@@ -2823,7 +2823,7 @@
 },
 "VAB.TO": {
 "date": "2026-11-05",
-"close": 22.635
+"close": 22.64
 },
 "VBAL.TO": {
 "date": "2026-11-05",
@@ -3083,7 +3083,7 @@
 },
 "XBB.TO": {
 "date": "2026-11-05",
-"close": 27.735
+"close": 27.74
 },
 "XEC.TO": {
 "date": "2026-11-05",
@@ -3251,7 +3251,7 @@
 },
 "ZFL.TO": {
 "date": "2026-11-05",
-"close": 11.755
+"close": 11.76
 },
 "ZGD.TO": {
 "date": "2026-11-05",
