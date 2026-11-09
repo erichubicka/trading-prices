@@ -8,6 +8,8 @@ stocks and ETFs plus the USD/CAD rate, and saves them as JSON in this repo:
 
   data/closes/YYYY-MM.json   {"YYYY-MM-DD": {"SYMBOL": close, ...}, ...}
   data/splits.json           {"SYMBOL": {"YYYY-MM-DD": ratio}}  (4.0 = 4-for-1; 0.1 = 1-for-10)
+  data/dividends.json        {"SYMBOL": {"YYYY-MM-DD": amount}} (ex-dividend date -> cash per share,
+                             in the stock's own currency, as actually paid; pay dates aren't included)
   data/fx/YYYY-MM.json       {"YYYY-MM-DD": usdcad, ...}
   data/latest.json           most recent close for every symbol + run info
   data/universe.json         the symbol list used, with where each came from
@@ -117,10 +119,10 @@ def build_universe() -> dict[str, list[str]]:
     return dict(sorted(uni.items()))
 
 
-def download(symbols: list[str], start: dt.date, end: dt.date) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """(closes, splits): columns = symbols, index = dates. Batched to be gentle on Yahoo.
+def download(symbols: list[str], start: dt.date, end: dt.date) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """(closes, splits, dividends): columns = symbols, index = dates. Batched to be gentle on Yahoo.
     Yahoo's closes are adjusted for splits it knows about; main() undoes that."""
-    frames, split_frames = [], []
+    frames, split_frames, div_frames = [], [], []
     for i in range(0, len(symbols), 150):
         chunk = symbols[i:i + 150]
         for attempt in range(3):
@@ -133,10 +135,14 @@ def download(symbols: list[str], start: dt.date, end: dt.date) -> tuple[pd.DataF
                         frames.append(df["Close"])
                         if "Stock Splits" in df.columns.get_level_values(0):
                             split_frames.append(df["Stock Splits"])
+                        if "Dividends" in df.columns.get_level_values(0):
+                            div_frames.append(df["Dividends"])
                     else:
                         frames.append(df[["Close"]].rename(columns={"Close": chunk[0]}))
                         if "Stock Splits" in df.columns:
                             split_frames.append(df[["Stock Splits"]].rename(columns={"Stock Splits": chunk[0]}))
+                        if "Dividends" in df.columns:
+                            div_frames.append(df[["Dividends"]].rename(columns={"Dividends": chunk[0]}))
                 break
             except Exception as e:
                 print(f"chunk {i}: attempt {attempt + 1} failed: {e}", file=sys.stderr)
@@ -144,7 +150,8 @@ def download(symbols: list[str], start: dt.date, end: dt.date) -> tuple[pd.DataF
         time.sleep(2)
     closes = pd.concat(frames, axis=1) if frames else pd.DataFrame()
     splits = pd.concat(split_frames, axis=1) if split_frames else pd.DataFrame()
-    return closes, splits
+    divs = pd.concat(div_frames, axis=1) if div_frames else pd.DataFrame()
+    return closes, splits, divs
 
 
 def merge_monthly(folder: Path, rows: dict[str, dict]) -> int:
@@ -184,7 +191,7 @@ def main():
     symbols = list(uni)
     print(f"{len(symbols)} symbols, {start} to {today}")
 
-    closes, split_df = download(symbols, start, today)
+    closes, split_df, div_df = download(symbols, start, today)
 
     # Splits: merge what Yahoo reports into data/splits.json (kept forever).
     split_file = DATA / "splits.json"
@@ -218,9 +225,23 @@ def main():
             vals = {str(s): round(actual(str(s), d, float(v)), 4) for s, v in row.items() if pd.notna(v) and float(v) > 0}
             if vals:
                 rows[d] = vals
+    # Dividends: cash per share on each ex-dividend date, as actually paid (Yahoo adjusts old
+    # amounts for later splits; actual() undoes that just like for prices).
+    div_file = DATA / "dividends.json"
+    dividends: dict[str, dict[str, float]] = json.loads(div_file.read_text()) if div_file.exists() else {}
+    if not div_df.empty:
+        for ts, row in div_df.iterrows():
+            d = pd.Timestamp(ts).date().isoformat()
+            if d > cutoff_day.isoformat():
+                continue
+            for sym, amt in row.items():
+                if pd.notna(amt) and float(amt) > 0:
+                    dividends.setdefault(str(sym), {})[d] = round(actual(str(sym), d, float(amt)), 6)
+    div_file.write_text(json.dumps(dict(sorted(dividends.items())), indent=1, sort_keys=True))
+
     n_px = merge_monthly(DATA / "closes", rows)
 
-    fx, _ = download(["USDCAD=X"], start, today)
+    fx, _, _ = download(["USDCAD=X"], start, today)
     fx_rows = {}
     if not fx.empty:
         for ts, row in fx.iterrows():
@@ -245,7 +266,8 @@ def main():
         "updated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "source": "Yahoo Finance via yfinance (unofficial; personal use)",
         "note": ("Actual daily closes (NOT adjusted for splits or dividends). History in data/closes/YYYY-MM.json. "
-                 "Splits are listed in data/splits.json: divide prices before a split date by its ratio to compare."),
+                 "Splits are listed in data/splits.json: divide prices before a split date by its ratio to compare. "
+                 "Dividends (ex-date -> cash per share) are in data/dividends.json."),
         "splits_last_90_days": {s: {d: r for d, r in v.items() if d >= (today - dt.timedelta(days=90)).isoformat()}
                                 for s, v in splits.items()
                                 if any(d >= (today - dt.timedelta(days=90)).isoformat() for d in v)},
