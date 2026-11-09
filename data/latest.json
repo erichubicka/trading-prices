@@ -1,7 +1,24 @@
 {
-"updated_at": "2026-11-07T14:00:38Z",
+"updated_at": "2026-11-09T15:24:54Z",
 "source": "Yahoo Finance via yfinance (unofficial; personal use)",
-"note": "Daily closes, split-adjusted, not dividend-adjusted. History in data/closes/YYYY-MM.json.",
+"note": "Actual daily closes (NOT adjusted for splits or dividends). History in data/closes/YYYY-MM.json. Splits are listed in data/splits.json: divide prices before a split date by its ratio to compare.",
+"splits_last_90_days": {
+"MNST": {
+"2026-08-11": 2.0
+},
+"APH": {
+"2026-09-03": 2.0
+},
+"MTUM": {
+"2026-11-05": 4.0
+},
+"QUAL": {
+"2026-11-05": 4.0
+},
+"SOXX": {
+"2026-11-05": 3.0
+}
+},
 "symbols": 819,
 "missing": [],
 "usdcad": {
