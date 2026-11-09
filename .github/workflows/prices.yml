@@ -35,7 +35,7 @@ jobs:
       - run: pip install --quiet yfinance pandas lxml requests
       - name: Fetch prices
         run: |
-          if [ "${{ github.event_name }}" = "push" ] && [ ! -f data/latest.json ]; then
+          if [ "${{ github.event_name }}" = "push" ]; then
             python fetch_prices.py --backfill
           elif [ "${{ inputs.backfill }}" = "true" ]; then
             python fetch_prices.py --backfill

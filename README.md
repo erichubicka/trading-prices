@@ -17,9 +17,10 @@ A GitHub Actions job (`.github/workflows/prices.yml`) runs `fetch_prices.py` eve
 | `data/closes/YYYY-MM.json` | Every daily close, by date then symbol |
 | `data/fx/YYYY-MM.json` | Daily USD/CAD |
 | `data/universe.json` | The symbol list and where each came from |
+| `data/splits.json` | Stock splits by symbol and date (4.0 = 4-for-1). Divide earlier prices by the ratio to compare across a split |
 
 Symbols use Yahoo's format: TSX ends in `.TO` (`RY.TO`), class shares use a hyphen (`BRK-B`, `BBD-B.TO`).
 
 To add a symbol, put it on its own line in `extra_symbols.txt`. To rerun by hand: Actions tab → "Daily closing prices" → Run workflow.
 
-This repo is private because Yahoo's data is for personal use only.
+Prices are the actual daily closes (not adjusted for splits or dividends); `data/splits.json` lists splits. Data comes from Yahoo Finance and is for personal, non-commercial use.

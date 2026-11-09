@@ -7,12 +7,16 @@ workspace can't). Downloads daily closes for a broad universe of US and Canadian
 stocks and ETFs plus the USD/CAD rate, and saves them as JSON in this repo:
 
   data/closes/YYYY-MM.json   {"YYYY-MM-DD": {"SYMBOL": close, ...}, ...}
+  data/splits.json           {"SYMBOL": {"YYYY-MM-DD": ratio}}  (4.0 = 4-for-1; 0.1 = 1-for-10)
   data/fx/YYYY-MM.json       {"YYYY-MM-DD": usdcad, ...}
   data/latest.json           most recent close for every symbol + run info
   data/universe.json         the symbol list used, with where each came from
 
-Closes are the exchange's actual daily close (split-adjusted, NOT dividend-
-adjusted). Symbols use Yahoo's format, which matches the competition's:
+Closes are the ACTUAL price each day (not adjusted for later splits or
+dividends), so they never change once saved. When a stock splits, its price
+drops on the split day; data/splits.json lists every split so you can adjust
+older prices when comparing across one (divide prices before the split date
+by the ratio). Symbols use Yahoo's format, which matches the competition's:
 TSX = "RY.TO", class shares use a hyphen ("BRK-B", "BBD-B.TO").
 
 Usage: python fetch_prices.py [--days 10] [--backfill]   (backfill = 1 year)
@@ -113,27 +117,34 @@ def build_universe() -> dict[str, list[str]]:
     return dict(sorted(uni.items()))
 
 
-def download(symbols: list[str], start: dt.date, end: dt.date) -> pd.DataFrame:
-    """Daily closes, columns = symbols, index = dates. Batched to be gentle on Yahoo."""
-    frames = []
+def download(symbols: list[str], start: dt.date, end: dt.date) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """(closes, splits): columns = symbols, index = dates. Batched to be gentle on Yahoo.
+    Yahoo's closes are adjusted for splits it knows about; main() undoes that."""
+    frames, split_frames = [], []
     for i in range(0, len(symbols), 150):
         chunk = symbols[i:i + 150]
         for attempt in range(3):
             try:
                 df = yf.download(chunk, start=start.isoformat(), end=(end + dt.timedelta(days=1)).isoformat(),
-                                 auto_adjust=False, actions=False, progress=False, threads=True,
+                                 auto_adjust=False, actions=True, progress=False, threads=True,
                                  group_by="column")
                 if df is not None and not df.empty:
-                    close = df["Close"] if isinstance(df.columns, pd.MultiIndex) else df[["Close"]].rename(columns={"Close": chunk[0]})
-                    frames.append(close)
+                    if isinstance(df.columns, pd.MultiIndex):
+                        frames.append(df["Close"])
+                        if "Stock Splits" in df.columns.get_level_values(0):
+                            split_frames.append(df["Stock Splits"])
+                    else:
+                        frames.append(df[["Close"]].rename(columns={"Close": chunk[0]}))
+                        if "Stock Splits" in df.columns:
+                            split_frames.append(df[["Stock Splits"]].rename(columns={"Stock Splits": chunk[0]}))
                 break
             except Exception as e:
                 print(f"chunk {i}: attempt {attempt + 1} failed: {e}", file=sys.stderr)
                 time.sleep(10 * (attempt + 1))
         time.sleep(2)
-    if not frames:
-        return pd.DataFrame()
-    return pd.concat(frames, axis=1)
+    closes = pd.concat(frames, axis=1) if frames else pd.DataFrame()
+    splits = pd.concat(split_frames, axis=1) if split_frames else pd.DataFrame()
+    return closes, splits
 
 
 def merge_monthly(folder: Path, rows: dict[str, dict]) -> int:
@@ -173,7 +184,28 @@ def main():
     symbols = list(uni)
     print(f"{len(symbols)} symbols, {start} to {today}")
 
-    closes = download(symbols, start, today)
+    closes, split_df = download(symbols, start, today)
+
+    # Splits: merge what Yahoo reports into data/splits.json (kept forever).
+    split_file = DATA / "splits.json"
+    splits: dict[str, dict[str, float]] = json.loads(split_file.read_text()) if split_file.exists() else {}
+    if not split_df.empty:
+        for ts, row in split_df.iterrows():
+            d = pd.Timestamp(ts).date().isoformat()
+            for sym, r in row.items():
+                if pd.notna(r) and float(r) > 0 and abs(float(r) - 1.0) > 1e-9:
+                    splits.setdefault(str(sym), {})[d] = round(float(r), 6)
+    DATA.mkdir(parents=True, exist_ok=True)
+    split_file.write_text(json.dumps(dict(sorted(splits.items())), indent=1, sort_keys=True))
+
+    def actual(sym: str, d: str, adj: float) -> float:
+        """Undo Yahoo's split adjustment: multiply by every split ratio dated after d."""
+        f = 1.0
+        for sd, r in splits.get(sym, {}).items():
+            if sd > d:
+                f *= r
+        return adj * f
+
     # Never save today's prices before the close (4pm Eastern + 30 min): mid-day prices aren't closes.
     et_now = dt.datetime.now(ZoneInfo("America/Toronto"))
     cutoff_day = et_now.date() if et_now.time() >= dt.time(16, 30) else et_now.date() - dt.timedelta(days=1)
@@ -183,12 +215,12 @@ def main():
             d = pd.Timestamp(ts).date().isoformat()
             if d > cutoff_day.isoformat():
                 continue
-            vals = {str(s): round(float(v), 4) for s, v in row.items() if pd.notna(v) and float(v) > 0}
+            vals = {str(s): round(actual(str(s), d, float(v)), 4) for s, v in row.items() if pd.notna(v) and float(v) > 0}
             if vals:
                 rows[d] = vals
     n_px = merge_monthly(DATA / "closes", rows)
 
-    fx = download(["USDCAD=X"], start, today)
+    fx, _ = download(["USDCAD=X"], start, today)
     fx_rows = {}
     if not fx.empty:
         for ts, row in fx.iterrows():
@@ -212,7 +244,11 @@ def main():
     (DATA / "latest.json").write_text(json.dumps({
         "updated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "source": "Yahoo Finance via yfinance (unofficial; personal use)",
-        "note": "Daily closes, split-adjusted, not dividend-adjusted. History in data/closes/YYYY-MM.json.",
+        "note": ("Actual daily closes (NOT adjusted for splits or dividends). History in data/closes/YYYY-MM.json. "
+                 "Splits are listed in data/splits.json: divide prices before a split date by its ratio to compare."),
+        "splits_last_90_days": {s: {d: r for d, r in v.items() if d >= (today - dt.timedelta(days=90)).isoformat()}
+                                for s, v in splits.items()
+                                if any(d >= (today - dt.timedelta(days=90)).isoformat() for d in v)},
         "symbols": len(latest), "missing": missing, "usdcad": fx_latest,
         "closes": dict(sorted(latest.items())),
     }, indent=0, sort_keys=False))
