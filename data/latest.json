@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-10T04:19:11Z",
+"updated_at": "2026-11-10T15:35:58Z",
 "source": "Yahoo Finance via yfinance (unofficial; personal use)",
 "note": "Actual daily closes (NOT adjusted for splits or dividends). History in data/closes/YYYY-MM.json. Splits are listed in data/splits.json: divide prices before a split date by its ratio to compare. Dividends (ex-date -> cash per share) are in data/dividends.json.",
 "splits_last_90_days": {
@@ -1684,7 +1684,7 @@
 "close": 2.87
 },
 "LB.TO": {
-"date": "2026-11-06",
+"date": "2026-11-09",
 "close": 40.49
 },
 "LDOS": {
@@ -2768,8 +2768,8 @@
 "close": 206.64
 },
 "TXG.TO": {
-"date": "2026-11-06",
-"close": 75.91
+"date": "2026-11-09",
+"close": 77.51
 },
 "TXN": {
 "date": "2026-11-09",
@@ -2837,7 +2837,7 @@
 },
 "VAB.TO": {
 "date": "2026-11-09",
-"close": 22.665
+"close": 22.67
 },
 "VBAL.TO": {
 "date": "2026-11-09",
@@ -3097,7 +3097,7 @@
 },
 "XBB.TO": {
 "date": "2026-11-09",
-"close": 27.795
+"close": 27.8
 },
 "XEC.TO": {
 "date": "2026-11-09",
@@ -3113,7 +3113,7 @@
 },
 "XEI.TO": {
 "date": "2026-11-09",
-"close": 40.085
+"close": 40.09
 },
 "XEL": {
 "date": "2026-11-09",
@@ -3265,7 +3265,7 @@
 },
 "ZFL.TO": {
 "date": "2026-11-09",
-"close": 11.785
+"close": 11.79
 },
 "ZGD.TO": {
 "date": "2026-11-09",
