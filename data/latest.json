@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-13T02:54:13Z",
+"updated_at": "2026-11-13T15:23:32Z",
 "source": "Yahoo Finance via yfinance (unofficial; personal use)",
 "note": "Actual daily closes (NOT adjusted for splits or dividends). History in data/closes/YYYY-MM.json. Splits are listed in data/splits.json: divide prices before a split date by its ratio to compare. Dividends (ex-date -> cash per share) are in data/dividends.json.",
 "splits_last_90_days": {
@@ -3265,7 +3265,7 @@
 },
 "ZFL.TO": {
 "date": "2026-11-12",
-"close": 11.585
+"close": 11.59
 },
 "ZGD.TO": {
 "date": "2026-11-12",
@@ -3293,7 +3293,7 @@
 },
 "ZWB.TO": {
 "date": "2026-11-12",
-"close": 31.005
+"close": 31.01
 },
 "ZWC.TO": {
 "date": "2026-11-12",
