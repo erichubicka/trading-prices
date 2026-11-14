@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-14T02:41:26Z",
+"updated_at": "2026-11-14T14:08:58Z",
 "source": "Yahoo Finance via yfinance (unofficial; personal use)",
 "note": "Actual daily closes (NOT adjusted for splits or dividends). History in data/closes/YYYY-MM.json. Splits are listed in data/splits.json: divide prices before a split date by its ratio to compare. Dividends (ex-date -> cash per share) are in data/dividends.json.",
 "splits_last_90_days": {
@@ -565,7 +565,7 @@
 },
 "CDZ.TO": {
 "date": "2026-11-13",
-"close": 47.065
+"close": 47.07
 },
 "CEG": {
 "date": "2026-11-13",
