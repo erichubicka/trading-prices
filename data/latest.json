@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-24T06:23:17Z",
+"updated_at": "2026-11-24T18:53:31Z",
 "source": "Yahoo Finance via yfinance (unofficial; personal use)",
 "note": "Actual daily closes (NOT adjusted for splits or dividends). History in data/closes/YYYY-MM.json. Splits are listed in data/splits.json: divide prices before a split date by its ratio to compare. Dividends (ex-date -> cash per share) are in data/dividends.json.",
 "splits_last_90_days": {
@@ -351,8 +351,8 @@
 "close": 12.03
 },
 "BBD-B.TO": {
-"date": "2026-11-20",
-"close": 287.83
+"date": "2026-11-23",
+"close": 291.2
 },
 "BBUC.TO": {
 "date": "2026-11-23",
@@ -383,16 +383,16 @@
 "close": 168.15
 },
 "BEI-UN.TO": {
-"date": "2026-11-20",
-"close": 60.0
+"date": "2026-11-23",
+"close": 60.4
 },
 "BEN": {
 "date": "2026-11-23",
 "close": 33.53
 },
 "BEP-UN.TO": {
-"date": "2026-11-20",
-"close": 41.79
+"date": "2026-11-23",
+"close": 42.6
 },
 "BF-B": {
 "date": "2026-11-23",
@@ -411,8 +411,8 @@
 "close": 256.71
 },
 "BIP-UN.TO": {
-"date": "2026-11-20",
-"close": 61.66
+"date": "2026-11-23",
+"close": 64.75
 },
 "BIR.TO": {
 "date": "2026-11-23",
@@ -507,8 +507,8 @@
 "close": 271.97
 },
 "CAR-UN.TO": {
-"date": "2026-11-20",
-"close": 29.77
+"date": "2026-11-23",
+"close": 29.82
 },
 "CARR": {
 "date": "2026-11-23",
@@ -763,8 +763,8 @@
 "close": 30.2
 },
 "CSH-UN.TO": {
-"date": "2026-11-20",
-"close": 21.01
+"date": "2026-11-23",
+"close": 20.79
 },
 "CSU.TO": {
 "date": "2026-11-23",
@@ -871,8 +871,8 @@
 "close": 495.8
 },
 "DIR-UN.TO": {
-"date": "2026-11-20",
-"close": 12.74
+"date": "2026-11-23",
+"close": 12.82
 },
 "DIS": {
 "date": "2026-11-23",
@@ -1655,8 +1655,8 @@
 "close": 30.57
 },
 "KMP-UN.TO": {
-"date": "2026-11-20",
-"close": 17.02
+"date": "2026-11-23",
+"close": 17.16
 },
 "KNT.TO": {
 "date": "2026-11-23",
@@ -2335,8 +2335,8 @@
 "close": 942.24
 },
 "REI-UN.TO": {
-"date": "2026-11-20",
-"close": 21.3
+"date": "2026-11-23",
+"close": 21.25
 },
 "RF": {
 "date": "2026-11-23",
@@ -2635,8 +2635,8 @@
 "close": 72.8
 },
 "TECK-B.TO": {
-"date": "2026-11-20",
-"close": 69.39
+"date": "2026-11-23",
+"close": 75.1
 },
 "TEL": {
 "date": "2026-11-23",
