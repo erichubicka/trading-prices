@@ -1,10 +1,13 @@
 {
-"updated_at": "2026-11-25T05:02:35Z",
+"updated_at": "2026-11-25T17:58:19Z",
 "source": "Yahoo Finance via yfinance (unofficial; personal use)",
 "note": "Actual daily closes (NOT adjusted for splits or dividends). History in data/closes/YYYY-MM.json. Splits are listed in data/splits.json: divide prices before a split date by its ratio to compare. Dividends (ex-date -> cash per share) are in data/dividends.json.",
 "splits_last_90_days": {
 "APH": {
 "2026-09-03": 2.0
+},
+"GRT-UN.TO": {
+"2026-11-24": 3.0
 },
 "MTUM": {
 "2026-11-05": 4.0
@@ -17,9 +20,6 @@
 },
 "SOXX": {
 "2026-11-05": 3.0
-},
-"GRT-UN.TO": {
-"2026-11-24": 3.0
 }
 },
 "symbols": 819,
@@ -354,8 +354,8 @@
 "close": 12.04
 },
 "BBD-B.TO": {
-"date": "2026-11-23",
-"close": 291.2
+"date": "2026-11-24",
+"close": 286.02
 },
 "BBUC.TO": {
 "date": "2026-11-24",
@@ -386,16 +386,16 @@
 "close": 156.41
 },
 "BEI-UN.TO": {
-"date": "2026-11-23",
-"close": 60.4
+"date": "2026-11-24",
+"close": 61.99
 },
 "BEN": {
 "date": "2026-11-24",
 "close": 33.39
 },
 "BEP-UN.TO": {
-"date": "2026-11-23",
-"close": 42.6
+"date": "2026-11-24",
+"close": 43.1
 },
 "BF-B": {
 "date": "2026-11-24",
@@ -414,8 +414,8 @@
 "close": 269.11
 },
 "BIP-UN.TO": {
-"date": "2026-11-23",
-"close": 64.75
+"date": "2026-11-24",
+"close": 65.05
 },
 "BIR.TO": {
 "date": "2026-11-24",
@@ -510,8 +510,8 @@
 "close": 279.65
 },
 "CAR-UN.TO": {
-"date": "2026-11-23",
-"close": 29.82
+"date": "2026-11-24",
+"close": 30.98
 },
 "CARR": {
 "date": "2026-11-24",
@@ -766,8 +766,8 @@
 "close": 32.64
 },
 "CSH-UN.TO": {
-"date": "2026-11-23",
-"close": 20.79
+"date": "2026-11-24",
+"close": 21.31
 },
 "CSU.TO": {
 "date": "2026-11-24",
@@ -874,8 +874,8 @@
 "close": 499.74
 },
 "DIR-UN.TO": {
-"date": "2026-11-23",
-"close": 12.82
+"date": "2026-11-24",
+"close": 13.08
 },
 "DIS": {
 "date": "2026-11-24",
@@ -1658,8 +1658,8 @@
 "close": 31.08
 },
 "KMP-UN.TO": {
-"date": "2026-11-23",
-"close": 17.16
+"date": "2026-11-24",
+"close": 17.6
 },
 "KNT.TO": {
 "date": "2026-11-24",
@@ -2338,8 +2338,8 @@
 "close": 987.09
 },
 "REI-UN.TO": {
-"date": "2026-11-23",
-"close": 21.25
+"date": "2026-11-24",
+"close": 21.83
 },
 "RF": {
 "date": "2026-11-24",
@@ -2638,8 +2638,8 @@
 "close": 72.81
 },
 "TECK-B.TO": {
-"date": "2026-11-23",
-"close": 75.1
+"date": "2026-11-24",
+"close": 72.01
 },
 "TEL": {
 "date": "2026-11-24",
