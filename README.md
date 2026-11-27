@@ -25,3 +25,7 @@ Symbols use Yahoo's format: TSX ends in `.TO` (`RY.TO`), class shares use a hyph
 To add a symbol, put it on its own line in `extra_symbols.txt`. To rerun by hand: Actions tab → "Daily closing prices" → Run workflow.
 
 Prices are the actual daily closes (not adjusted for splits or dividends); `data/splits.json` lists splits and `data/dividends.json` lists dividends. Data comes from Yahoo Finance and is for personal, non-commercial use.
+
+## Referee code
+
+`referee/` holds the competition's referee (`referee.py`, `daily.py`) and its tests. The nightly referee task copies these two files from here before each run, so a change pushed here takes effect on the next run. Run the tests with `python3 -m pytest referee/test_referee.py`.
