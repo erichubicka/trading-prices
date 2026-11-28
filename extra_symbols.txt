@@ -1,1 +1,1 @@
-# One symbol per line, Yahoo format (RY.TO, BRK-B). Picked up on the next run.
+# One symbol per line, Yahoo format (RY.TO, BRK-B). Picked up on the next run. Editing this file also triggers a price update.
