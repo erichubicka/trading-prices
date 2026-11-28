@@ -1,5 +1,5 @@
 {
-"updated_at": "2026-11-28T00:05:04Z",
+"updated_at": "2026-11-28T04:14:44Z",
 "source": "Yahoo Finance via yfinance (unofficial; personal use)",
 "note": "Actual daily closes (NOT adjusted for splits or dividends). History in data/closes/YYYY-MM.json. Splits are listed in data/splits.json: divide prices before a split date by its ratio to compare. Dividends (ex-date -> cash per share) are in data/dividends.json.",
 "splits_last_90_days": {
@@ -162,8 +162,8 @@
 "close": 82.93
 },
 "ALGN": {
-"date": "2026-11-25",
-"close": 165.4
+"date": "2026-11-27",
+"close": 165.97
 },
 "ALL": {
 "date": "2026-11-27",
@@ -1595,7 +1595,7 @@
 },
 "JKHY": {
 "date": "2026-11-27",
-"close": 182.035
+"close": 182.04
 },
 "JNJ": {
 "date": "2026-11-27",
